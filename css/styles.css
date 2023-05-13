@@ -63,7 +63,7 @@ body {
     color: var(--page-text);
 }
 
-.header-address{
+.header-address {
     font-style: normal;
 }
 
@@ -171,14 +171,20 @@ button {
 }
 
 .btn-text-portfolio {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
     color: #4d5ae5;
     background-color: #F4F4FD;
 }
 
 .btn-text-portfolio:hover,
 .btn-text-portfolio:focus {
-    color: var(--btn-text);
-    background-color: var(--function-color);
+    color: #FFFFFF;
+    background-color: #404bbf;
 }
 
 .footer-section {
