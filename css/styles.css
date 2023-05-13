@@ -162,14 +162,6 @@ body {
 }
 
 
-button {
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.04em;
-    color: var(--function-color);
-    background-color: var(--page-text-light);
-}
-
 .btn-text-portfolio {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
