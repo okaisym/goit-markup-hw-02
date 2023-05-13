@@ -1,3 +1,11 @@
+:root {
+    --text-title: #2E2F42;
+    --page-text:  #434455;
+    --function-color: #4D5AE5;
+    --btn-text: #FFFFFF;
+    --page-text-light: #F4F4FD;
+}
+
 body {
     font-family: 'Roboto' sans-serif;
     font-style: normal;
@@ -5,6 +13,14 @@ body {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
 }
 
 /* =================  HEADER  ================== */
@@ -15,25 +31,13 @@ body {
     font-size: 18px;
     line-height: 1.17;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--function-color);
 }
 
-.web-logo {
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    color: #4D5AE5;
+.web-logo-header {
+    color: var(--function-color);
 }
 
-.link {
-    text-decoration: none;
-}
-
-.list {
-    list-style: none;
-}
 
 .visually-hidden {
     position: absolute;
@@ -48,7 +52,6 @@ body {
     overflow: hidden;
 }
 
-.header {}
 
 .header-list {
     font-family: 'Roboto';
@@ -56,7 +59,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--text-title)
 }
 
 .header-address-link {
@@ -66,7 +69,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: black;
+    color: var(--page-text);
 }
 
 .header-link-item {
@@ -76,69 +79,73 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--text-title);
 }
 
 .header-link-item:hover,
 .header-link-item:focus {
-    color: #4D5AE5;
+    color: var(--function-color);
 }
 
 /* ================ HERO ================ */
 
+
+.hero-section {
+    background-color: var(--text-title);
+}
+
 .hero-text {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
-    background-color: #2E2F42;
+    color: var(--btn-text);
 }
 
 .btn-text {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--btn-text);
+    background-color: var(--function-color);
 }
 
 /*  ================ ADVANTAGES ================  */
 
 .text-title {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--text-title);
 }
 
 .text-description {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--page-text);
 }
 
 .section-title {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--text-title);
+}
+
+.background {
+    color: #F4F4FD;
 }
 
 
@@ -157,13 +164,29 @@ button {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.04em;
-    color: #4D5AE5;
-    background-color: #F4F4FD;
+    color: var(--function-color);
+    background-color: var(--page-text-light);
 }
 
 .btn-text-portfolio:hover,
 .btn-text-portfolio:focus {
-    color: #FFFFFF;
-    background-color: #4D5AE5;
+    color: var(--btn-text);
+    background-color: var(--function-color);
 }
 
+.footer-section {
+    background-color: var(--text-title);
+}
+
+.web-logo-footer {
+    color: var(--page-text-light);
+}
+
+.text-description-footer {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--page-text-light);
+}
