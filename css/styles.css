@@ -63,6 +63,10 @@ body {
     color: var(--page-text);
 }
 
+.header-address{
+    font-style: normal;
+}
+
 .header-address-link:focus,
 .header-address-link:hover {
     color: #404bbf;
@@ -70,6 +74,7 @@ body {
 
 .header-link-item {
     font-size: 16px;
+    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2E2F42;
@@ -153,7 +158,7 @@ body {
 }
 
 .background {
-    color: #F4F4FD;
+    background-color: #F4F4FD;
 }
 
 
@@ -163,6 +168,11 @@ button {
     letter-spacing: 0.04em;
     color: var(--function-color);
     background-color: var(--page-text-light);
+}
+
+.btn-text-portfolio {
+    color: #4d5ae5;
+    background-color: #F4F4FD;
 }
 
 .btn-text-portfolio:hover,
